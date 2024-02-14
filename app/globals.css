@@ -81,6 +81,10 @@ body {
   filter: brightness(0) saturate(100%) invert(47%) sepia(0%) saturate(217%) hue-rotate(32deg) brightness(98%) contrast(92%);
 }
 
+.filter-white {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(217%) hue-rotate(32deg) brightness(98%) contrast(92%);
+}
+
 /* ========================================== TAILWIND STYLES */
 @layer utilities {
   .wrapper {
@@ -217,7 +221,7 @@ body {
   }
 
   .button {
-    @apply rounded-lg h-[54px] p-regular-16;
+    @apply h-[54px] p-regular-16;
   }
 
   .select-item {
