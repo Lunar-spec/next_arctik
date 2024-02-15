@@ -82,9 +82,12 @@ const Dropdown = ({ onChangeHandler, value }: DropdownProps) => {
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogCancel className="rounded-md">
+                Cancel
+              </AlertDialogCancel>
               <AlertDialogAction
                 onClick={() => startTransition(handleAddCategory)}
+                className="rounded-md"
               >
                 Add
               </AlertDialogAction>

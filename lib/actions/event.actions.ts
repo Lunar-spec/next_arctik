@@ -97,6 +97,8 @@ export async function deleteEvent({ eventId, path }: DeleteEventParams) {
 // GET ALL EVENTS
 export async function getAllEvents({ query, limit = 6, page, category }: GetAllEventsParams) {
     try {
+        console.log(category);
+        
         await connectToDatabase()
 
         const titleCondition = query ? { title: { $regex: query, $options: 'i' } } : {}
